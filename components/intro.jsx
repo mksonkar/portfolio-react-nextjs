@@ -55,7 +55,12 @@ function Intro() {
         <span className="underline">React and Next.js</span>.
       </motion.p>
 
-      <div className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row">
+      <motion.div
+        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
         <Link
           href="#contact"
           className="flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white"
@@ -71,7 +76,7 @@ function Intro() {
         <a className="flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700">
           <FaGithubSquare />
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }
