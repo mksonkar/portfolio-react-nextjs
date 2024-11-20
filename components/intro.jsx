@@ -4,10 +4,14 @@ import Image from "next/image";
 import React from "react";
 import mukeshPortrait from "@/public/mukeshPortrait.jpg";
 import { motion } from "motion/react";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 
 function Intro() {
   return (
-    <section>
+    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -39,6 +43,17 @@ function Intro() {
           </motion.span>
         </div>
       </div>
+
+      <motion.p
+        className="mb-10 mt-8 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <span className="font-bold">Hello, I'm Mukesh Kumar.</span> I'm a{" "}
+        <span className="font-bold">front-end developer.</span> I enjoy building
+        cool apps and websites using{" "}
+        <span className="underline">React and Next.js</span>.
+      </motion.p>
     </section>
   );
 }
