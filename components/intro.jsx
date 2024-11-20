@@ -54,6 +54,24 @@ function Intro() {
         cool apps and websites using{" "}
         <span className="underline">React and Next.js</span>.
       </motion.p>
+
+      <div className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row">
+        <Link
+          href="#contact"
+          className="flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white"
+        >
+          Contact Me <BsArrowRight />
+        </Link>
+        <a className="flex items-center gap-2 rounded-full bg-white px-7 py-3">
+          Download Resume <HiDownload />
+        </a>
+        <a className="flex items-center gap-2 rounded-full bg-white p-4 text-gray-700">
+          <BsLinkedin />
+        </a>
+        <a className="flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700">
+          <FaGithubSquare />
+        </a>
+      </div>
     </section>
   );
 }
