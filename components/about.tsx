@@ -1,11 +1,39 @@
 import React from "react";
+import SectionHeading from "./section-heading";
 
-function About() {
+export default function About() {
   return (
     <section>
-      <h2>About me</h2>
+      <SectionHeading>About Me</SectionHeading>
+      <p className="mb-3">
+        A passionate frontend developer with a strong background in{" "}
+        <span className="font-medium">Computer Science and engineering</span>, I
+        specialize in crafting modern, responsive and user-friendly web sites
+        using{" "}
+        <span className="font-medium">
+          React, Next.js, Node.js, and MongoDB
+        </span>
+        . I am also familiar with TypeScript and Linux. I am always excited to
+        learn and expand my knowledge in the field of web development. I am
+        currently looking for a{" "}
+        <span className="font-medium">frontend position</span> as a software
+        developer.
+      </p>
+
+      <p>
+        <span className="italic">When I'm not coding</span>, you’ll find me
+        exploring new technologies, working on personal projects, or fiddeling
+        with my neovim config. With my{" "}
+        <span className="font-medium">strong problem-solving skills</span> and
+        firm grasp of the{" "}
+        <span className="italic">fundamentals of computer science</span> like{" "}
+        <span className="font-medium">algorithms and data structures</span>,{" "}
+        <span className="font-medium">operating systems</span>,{" "}
+        <span className="font-medium">networking</span> and{" "}
+        <span className="font-medium">database management systems</span>. I
+        believe I can make a significant impact in any field I pursue.{" "}
+        <span className="italic">Lets build something amazing together!</span>
+      </p>
     </section>
   );
 }
-
-export default About;
