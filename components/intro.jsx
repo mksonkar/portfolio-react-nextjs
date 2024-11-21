@@ -23,13 +23,14 @@ function Intro() {
               src={mukeshPortrait}
               alt="Mukesh's Portrait photo"
               width="192"
+              height="192"
               quality="95"
               priority={true}
               className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
           <motion.span
-            className="absolute bottom-1 right-2 text-5xl"
+            className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -45,7 +46,7 @@ function Intro() {
       </div>
 
       <motion.p
-        className="mb-10 mt-8 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -76,10 +77,18 @@ function Intro() {
           Download Resume{" "}
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
-        <a className="flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-110 focus:scale-110 active:scale-105">
+        <a
+          className="flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          href="https://www.linkedin.com/in/mkso/"
+          target="_blank"
+        >
           <BsLinkedin />
         </a>
-        <a className="flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700">
+        <a
+          className="flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          href="https://github.com/mksonkar"
+          target="_blank"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>
