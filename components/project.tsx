@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import { motion, useScroll } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { projectsData } from "@/lib/data";
 
 type ProjectProps = (typeof projectsData)[number];
@@ -18,10 +18,13 @@ export default function Project({
     target: ref,
     offset: ["0 1", "1.33 1"],
   });
+  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
+
   return (
     <motion.section
       ref={ref}
-      style={{ scale: scrollYProgress, opacity: scrollYProgress }}
+      style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="group relative mb-3 max-w-[42rem] overflow-hidden border border-black/5 bg-gray-100 last:mb-0 hover:bg-gray-200 sm:mb-8 sm:h-[20rem] sm:pr-8"
     >
       <div className="flex h-full flex-col px-5 pb-7 pt-4 group-even:ml-[21rem] sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10">
