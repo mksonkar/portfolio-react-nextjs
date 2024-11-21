@@ -7,7 +7,8 @@ import { motion } from "motion/react";
 export default function About() {
   return (
     <motion.section
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      id="about"
+      className="mb-28 max-w-[45rem] scroll-mt-28 text-center leading-8 sm:mb-40"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
