@@ -1,9 +1,17 @@
+"use client";
+
 import React from "react";
 import SectionHeading from "./section-heading";
+import { motion } from "motion/react";
 
 export default function About() {
   return (
-    <section>
+    <motion.section
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+    >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
         A passionate frontend developer with a strong background in{" "}
@@ -34,6 +42,6 @@ export default function About() {
         believe I can make a significant impact in any field I pursue.{" "}
         <span className="italic">Lets build something amazing together!</span>
       </p>
-    </section>
+    </motion.section>
   );
 }
