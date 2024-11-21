@@ -25,7 +25,7 @@ function Intro() {
               width="192"
               quality="95"
               priority={true}
-              className="h-34 w-34 rounded-full border-[0.35rem] border-white shadow-xl"
+              className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
           <motion.span
@@ -63,14 +63,20 @@ function Intro() {
       >
         <Link
           href="#contact"
-          className="flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white"
+          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
         >
-          Contact Me <BsArrowRight />
+          Contact Me{" "}
+          <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
-        <a className="flex items-center gap-2 rounded-full bg-white px-7 py-3">
-          Download Resume <HiDownload />
+        <a
+          className="group flex cursor-pointer items-center gap-2 rounded-full border border-black/10 bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
+          href="/Mukesh-Kumar-Resume.pdf"
+          download
+        >
+          Download Resume{" "}
+          <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
-        <a className="flex items-center gap-2 rounded-full bg-white p-4 text-gray-700">
+        <a className="flex items-center gap-2 rounded-full border border-black/10 bg-white p-4 text-gray-700 transition hover:scale-110 focus:scale-110 active:scale-105">
           <BsLinkedin />
         </a>
         <a className="flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700">
