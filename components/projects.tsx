@@ -22,15 +22,20 @@ type ProjectProps = (typeof projectsData)[number];
 
 function Project({ title, description, tags, imageUrl }: ProjectProps) {
   return (
-    <section>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <ul>
+    <section className="max-w-[42rem] overflow-hidden border border-black/5 bg-gray-100 sm:pr-8">
+      <h3 className="text-2xl font-semibold">{title}</h3>
+      <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+      <ul className="mt-4 flex flex-wrap gap-2 ">
         {tags.map((tag, index) => (
-          <li key={index}>{tag}</li>
+          <li
+            key={index}
+            className="rounded-full bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white"
+          >
+            {tag}
+          </li>
         ))}
       </ul>
-      {/* <Image src={imageUrl} alt={title} quality={95} width={450} height={450} /> */}
+      <Image src={imageUrl} alt={title} quality={95} />
     </section>
   );
 }
