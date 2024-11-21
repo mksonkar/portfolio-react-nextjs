@@ -35,7 +35,15 @@ function Header() {
               >
                 {link.name}
                 {activeSection === link.name && (
-                  <span className="absolute inset-0 -z-10 rounded-full bg-gray-100" />
+                  <motion.span
+                    className="absolute inset-0 -z-10 rounded-full bg-gray-100"
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  />
                 )}
               </Link>
             </motion.li>
