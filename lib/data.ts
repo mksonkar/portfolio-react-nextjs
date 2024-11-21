@@ -2,10 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import planero from "/planero.png";
-import ticTacToe from "/ticTacToe.png";
-import todoList from "/todoList.png";
-import passwordGenerator from "/passwordGenerator.png";
+import planeroImg from "@/public/planero.png";
+import ticTacToeImg from "@/public/ticTacToe.png";
+import todoListImg from "@/public/todoList.png";
+import passwordGeneratorImg from "@/public/passwordGenerator.png";
 
 export const links = [
   {
@@ -82,28 +82,28 @@ export const projectsData = [
     title: "Planero",
     description: "A project management app with boards, lists and cards.",
     tags: ["React", "React Router", "Tailwind", "Firebase"],
-    imageUrl: planero,
+    imageUrl: planeroImg,
   },
   {
     title: "React Password generator",
     description:
       "Generate secure passwords with random words, characters and numbers on the fly.",
     tags: ["React", "Tailwind"],
-    imageUrl: passwordGenerator,
+    imageUrl: passwordGeneratorImg,
   },
   {
     title: "Tic-Tac-Toe game",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React, CSS"],
-    imageUrl: ticTacToe,
+    imageUrl: ticTacToeImg,
   },
   {
     title: "Todo List app",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React, CSS"],
-    imageUrl: todoList,
+    imageUrl: todoListImg,
   },
 ] as const;
 
