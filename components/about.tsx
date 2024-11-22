@@ -7,7 +7,9 @@ import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function About() {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+  });
   const { setActiveSection } = useActiveSectionContext();
 
   useEffect(() => {
@@ -16,7 +18,6 @@ export default function About() {
     }
   }, [inView, setActiveSection]);
 
-  console.log(ref, inView);
   return (
     <motion.section
       ref={ref}
@@ -43,7 +44,7 @@ export default function About() {
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, you’ll find me
+        <span className="italic">When I'm not coding</span>, you'll find me
         exploring new technologies, working on personal projects, or fiddeling
         with my neovim config. With my{" "}
         <span className="font-medium">strong problem-solving skills</span> and
