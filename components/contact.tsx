@@ -1,12 +1,21 @@
+"use client";
+
 import React from "react";
 import SectionHeading from "./section-heading";
 import { FaPaperPlane } from "react-icons/fa";
+import { motion } from "motion/react";
 
 export default function Contact() {
   return (
-    <section id="contact" className="w-[min(100%, 38rem)] mb-20 sm:mb-28">
+    <motion.section
+      id="contact"
+      className="w-[min(100%, 38rem)] mb-20 text-center sm:mb-28"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <SectionHeading>Contact</SectionHeading>
-      <p className="text-gray-700">
+      <p className="-mt-6 text-gray-700">
         Please contact me directly at{" "}
         <a href="mailto:mkso13189@gmail.com" className="underline">
           mkso13189@gmail.com
@@ -31,6 +40,6 @@ export default function Contact() {
           <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:-translate-y-1 group-hover:translate-x-1" />
         </button>
       </form>
-    </section>
+    </motion.section>
   );
 }
