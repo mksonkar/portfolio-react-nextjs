@@ -9,7 +9,7 @@ import { useSectionInView } from "@/lib/hooks";
 import TimelineElement from "./experience-timeline-element";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience", 0.5, true);
+  const { ref } = useSectionInView("Experience", 0.5);
 
   return (
     <section ref={ref} id="experience" className="mb-28 scroll-mt-28">
