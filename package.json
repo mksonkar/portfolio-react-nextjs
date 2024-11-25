@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-email/components": "^0.0.28",
+    "@react-email/tailwind": "^1.0.2",
     "clsx": "^2.1.1",
     "motion": "^11.11.17",
     "next": "14.2.18",
