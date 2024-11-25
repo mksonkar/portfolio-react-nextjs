@@ -26,10 +26,12 @@ export default function ContactFormEmail({
       <Head />
       <Preview>New message from portfolio</Preview>
       <Tailwind>
-        <Body>
+        <Body className="bg-gray-100 text-black">
           <Container>
-            <Section>
-              <Heading>New message from portfolio</Heading>
+            <Section className="borderBlack my-10 rounded-md bg-white px-10 py-4">
+              <Heading className="leading-tight">
+                New message from portfolio
+              </Heading>
               <Text>{message}</Text>
               <Hr />
               <Text>Email from: {senderEmail}</Text>
