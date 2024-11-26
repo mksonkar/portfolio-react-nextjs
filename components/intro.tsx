@@ -83,7 +83,7 @@ function Intro() {
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
         <a
-          className="group flex cursor-pointer items-center gap-2 rounded-full borderBlack bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105"
+          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
           href="/Mukesh-Kumar-Resume.pdf"
           download
         >
@@ -91,14 +91,14 @@ function Intro() {
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
         <a
-          className="flex items-center gap-2 rounded-full borderBlack bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="borderBlack flex items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/mkso/"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className="flex items-center gap-2 rounded-full borderBlack bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105"
+          className="borderBlack flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
           href="https://github.com/mksonkar"
           target="_blank"
         >
