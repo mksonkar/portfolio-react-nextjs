@@ -27,7 +27,7 @@ export default function Project({
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       className="group relative mb-3 max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 last:mb-0 hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:mb-8 sm:h-[20rem] sm:pr-8"
     >
-      <div className="flex h-full flex-col px-5 pb-7 pt-4 group-even:ml-[21rem] sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10">
+      <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[21rem]">
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
           {description}
@@ -47,16 +47,16 @@ export default function Project({
         src={imageUrl}
         alt={title}
         quality={95}
-        className="absolute -right-40 top-8 w-[28.25rem] rounded-t-lg shadow-2xl transition 
-        group-even:-left-40 
+        className="absolute -right-40 top-8 hidden w-[28.25rem] rounded-t-lg shadow-2xl transition group-even:-left-40 
         group-even:right-[initial] 
         group-hover:-translate-x-3 
         group-hover:translate-y-3 
         group-hover:-rotate-2 
         group-hover:scale-105 
-        group-even:group-hover:translate-x-3
+        group-even:group-hover:translate-x-3 
         group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2
+        sm:block
         "
       />
     </motion.section>
