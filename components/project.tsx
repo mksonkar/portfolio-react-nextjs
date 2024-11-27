@@ -56,7 +56,7 @@ export default function Project({
           {tags.map((tag, index) => (
             <li
               key={index}
-              className="rounded-full bg-[#3B2316]/60 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-[#ffe6a7] dark:bg-[#1E110B]/60 dark:text-white/70"
+              className="rounded-full bg-[#3B2316]/60 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-[#ffe6a7] dark:bg-[#1E110B]/60 dark:text-opacity-70"
             >
               {tag}
             </li>
