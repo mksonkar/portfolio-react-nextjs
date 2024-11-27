@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .borderBlack {
-  @apply border border-black/10;
+  @apply border border-stone-950/10;
 }
