@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -35,7 +35,7 @@ function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white shadow-xl"
+              className="h-32 w-32 rounded-full border-[0.35rem] border-[#BB9457] shadow-xl dark:border-opacity-40"
             />
           </motion.div>
           <motion.span
@@ -73,7 +73,7 @@ function Intro() {
       >
         <Link
           href="#contact"
-          className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
+          className="group flex items-center gap-2 rounded-full bg-[#6F1D1B] px-7 py-3 text-[#FFE6A7] outline-none transition hover:scale-110 hover:bg-[#3B2316] focus:scale-110 active:scale-105"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -83,7 +83,7 @@ function Intro() {
           <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
         <a
-          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
+          className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-[#0F0906]/10 px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-[#FFE6A7]/20"
           href="/Mukesh-Kumar-Resume.pdf"
           download
         >
@@ -91,18 +91,18 @@ function Intro() {
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
         <a
-          className="borderBlack flex items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+          className="borderBlack flex items-center gap-2 rounded-full bg-[#3c3836]/10 p-4 transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70"
           href="https://www.linkedin.com/in/mkso/"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className="borderBlack flex items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
+          className="borderBlack flex items-center gap-2 rounded-full bg-[#3c3836]/10 p-[0.95rem]  text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70"
           href="https://github.com/mksonkar"
           target="_blank"
         >
-          <FaGithubSquare />
+          <FaGithub />
         </a>
       </motion.div>
     </section>
