@@ -73,7 +73,7 @@ function Intro() {
       >
         <Link
           href="#contact"
-          className="group flex items-center gap-2 rounded-full bg-[#6F1D1B] px-7 py-3 text-[#FFE6A7] outline-none transition hover:scale-110 hover:bg-[#3B2316] focus:scale-110 active:scale-105"
+          className="group flex items-center gap-2 rounded-full bg-[#3B2316] px-7 py-3 text-[#FFE6A7] outline-none transition hover:scale-110 hover:bg-[#6F1D1B] focus:scale-110 active:scale-105 dark:bg-[#FFE6A7]/60 dark:text-[#1e110b] dark:hover:bg-[#6F1D1B]/50 dark:hover:text-[#ffe6a4]/70"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
@@ -87,7 +87,7 @@ function Intro() {
           href="/Mukesh-Kumar-Resume.pdf"
           download
         >
-          Download Resume{" "}
+          Resume{" "}
           <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
         </a>
         <a

@@ -22,7 +22,7 @@ export default function Contact() {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact</SectionHeading>
-      <p className="-mt-6 text-gray-700 dark:text-white/80">
+      <p className="-mt-6 text-[#3B2316]/70 dark:text-[#bb9457]/80">
         Please contact me directly at{" "}
         <a href="mailto:mkso13189@gmail.com" className="underline">
           mkso13189@gmail.com
@@ -45,13 +45,13 @@ export default function Contact() {
           name="senderEmail"
           type="email"
           placeholder="Enter your email"
-          className="borderBlack h-14 rounded-lg px-4 transition-all dark:bg-gray-700 dark:bg-opacity-80 dark:hover:bg-opacity-100"
+          className="borderBlack h-14 rounded-lg bg-[#eace8f] px-4 transition-all placeholder:text-[#3B2316]/70 dark:bg-[#312516] dark:bg-opacity-80 placeholder:dark:text-[#bb9457]/80 dark:hover:bg-opacity-100"
           required
           maxLength={500}
         />
         <textarea
           name="message"
-          className="borderBlack my-3 h-52 rounded-lg p-4 transition-all dark:bg-gray-700 dark:bg-opacity-80 dark:hover:bg-opacity-100"
+          className="borderBlack my-3 h-52 rounded-lg bg-[#eace8f] p-4 transition-all placeholder:text-[#3B2316]/70 dark:bg-[#312516] dark:bg-opacity-80 placeholder:dark:text-[#bb9457]/80 dark:hover:bg-opacity-100"
           placeholder="Enter your message"
           required
           maxLength={5000}

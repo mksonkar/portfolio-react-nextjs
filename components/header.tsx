@@ -14,7 +14,7 @@ function Header() {
     <header className="relative z-[999]">
       <motion.div
         className="roudned-none fixed left-1/2 top-0 h-[4.5rem] w-full -translate-x-1/2 border border-[#BB9457]/50
-        bg-[#BB9457] bg-opacity-50 shadow-lg shadow-black/5 backdrop-blur-md dark:border-black/10 
+        bg-[#BB9457] bg-opacity-50 shadow-lg shadow-black/5 backdrop-blur-lg dark:border-black/10 
         dark:bg-opacity-20 sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
