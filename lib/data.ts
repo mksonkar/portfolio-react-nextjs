@@ -110,7 +110,7 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React, CSS"],
     imageUrl: todoListImg,
-    githubUrl: "https://github.com/mksonkar/todo-list-react",
+    githubUrl: "https://github.com/mksonkar/reactjs-todo-app",
     deployUrl: "https://reactjs-todo-app0.netlify.app/",
   },
 ] as const;
