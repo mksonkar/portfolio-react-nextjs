@@ -24,8 +24,7 @@ export default function TimelineElement({ item }: TimeLineElementProps) {
       <VerticalTimelineElement
         visible={inView}
         contentStyle={{
-          background:
-            theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+          background: theme === "light" ? "#eace8f" : "#312516",
           boxShadow: "none",
           border: "1px solid rgba(0, 0, 0, 0.05)",
           textAlign: "left",
@@ -33,24 +32,23 @@ export default function TimelineElement({ item }: TimeLineElementProps) {
         }}
         contentArrowStyle={{
           borderRight:
-            theme === "light"
-              ? "0.4rem solid #9ca3af"
-              : "0.4rem solid rgba(255, 255, 255, 0.5)",
+            theme === "light" ? "0.4rem solid #BB9457" : "0.4rem solid #745a2f",
         }}
         date={item.date}
         icon={item.icon}
         iconStyle={{
-          backgroundColor: theme === "light" ? "white" : "rgba(0, 0, 0, 0.3)",
+          backgroundColor: theme === "light" ? "#ffe6a7" : "#1E110B",
+          color: theme === "light" ? "#bb9457" : "#bb9457",
           fontSize: "1.5rem",
-          border:
+          boxShadow:
             theme === "light"
-              ? "3px solid white"
-              : "3px solid rgba(0, 0, 0, 0.3)",
+              ? "0 0 0 4px #BB9457, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05)"
+              : "0 0 0 4px #745a2f, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05)",
         }}
       >
         <h3 className="font-semibold capitalize">{item.title}</h3>
         <p className="!mt-0 font-normal">{item.location}</p>
-        <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+        <p className="!mt-1 !font-normal text-[#3B2316]/70 dark:text-[#bb9457]/80">
           {item.description}
         </p>
       </VerticalTimelineElement>
