@@ -14,6 +14,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  githubUrl,
+  deployUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -37,14 +39,14 @@ export default function Project({
         <div className="flex gap-2 py-4">
           <a
             className="borderBlack flex h-10 w-10 items-center justify-center rounded-full bg-[#3c3836]/10 p-2 text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70"
-            href="https://github.com/mksonkar"
+            href={githubUrl}
             target="_blank"
           >
             <FaGithub />
           </a>
           <a
             className="borderBlack flex h-10 w-10 items-center justify-center rounded-full bg-[#3c3836]/10 p-2 text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70"
-            href="https://github.com/mksonkar"
+            href={deployUrl}
             target="_blank"
           >
             <FiExternalLink />
