@@ -7,14 +7,18 @@ import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import TimelineElement from "./experience-timeline-element";
+import { useThemeContext } from "@/context/theme-context";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience", 0.5);
+  const { theme } = useThemeContext();
 
   return (
     <section ref={ref} id="experience" className="mb-28 scroll-mt-28 sm:mb-40">
       <SectionHeading>Experience</SectionHeading>
-      <VerticalTimeline lineColor="#e5e7eb">
+      <VerticalTimeline
+        lineColor={theme === "light" ? "#e5e7eb" : "rgba(255, 255, 255, 0.2)"}
+      >
         {experiencesData.map((experience, index) => {
           return <TimelineElement key={index} item={experience} />;
         })}
