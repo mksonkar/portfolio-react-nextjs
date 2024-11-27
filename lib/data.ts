@@ -83,6 +83,8 @@ export const projectsData = [
     description: "A project management app with boards, lists and cards.",
     tags: ["React", "React Router", "Tailwind", "Firebase"],
     imageUrl: planeroImg,
+    githubUrl: "https://github.com/mksonkar/planero-trello-clone-react",
+    deployUrl: "https://planero.netlify.app/",
   },
   {
     title: "React Password generator",
@@ -90,6 +92,8 @@ export const projectsData = [
       "Generate secure passwords with random words, characters and numbers on the fly.",
     tags: ["React", "Tailwind"],
     imageUrl: passwordGeneratorImg,
+    githubUrl: "https://github.com/mksonkar/react-password-generator",
+    deployUrl: "https://passwrd-generator-react.netlify.app/",
   },
   {
     title: "Tic-Tac-Toe game",
@@ -97,6 +101,8 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React, CSS"],
     imageUrl: ticTacToeImg,
+    githubUrl: "https://github.com/mksonkar/react-tic-tac-toe",
+    deployUrl: "https://reactjs-tic-tac-t0e.netlify.app/",
   },
   {
     title: "Todo List app",
@@ -104,6 +110,8 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React, CSS"],
     imageUrl: todoListImg,
+    githubUrl: "https://github.com/mksonkar/todo-list-react",
+    deployUrl: "https://reactjs-todo-app0.netlify.app/",
   },
 ] as const;
 
