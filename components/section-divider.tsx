@@ -2,15 +2,18 @@
 
 import React from "react";
 import { motion } from "motion/react";
+import { SlArrowDown } from "react-icons/sl";
 
 function SectionDivider() {
   return (
     <motion.div
-      className="my-24 hidden h-16 w-1 rounded-full bg-gray-200 dark:bg-opacity-20 sm:block"
-      initial={{ opacity: 0, y: 100 }}
+      className="my-16 mb-32 hidden text-[#BB9457] sm:flex sm:justify-center"
+      initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.125 }}
-    ></motion.div>
+      transition={{ delay: 0.3 }}
+    >
+      <SlArrowDown size={40} className="" />
+    </motion.div>
   );
 }
 
