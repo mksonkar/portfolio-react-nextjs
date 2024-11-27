@@ -45,13 +45,13 @@ export default function Contact() {
           name="senderEmail"
           type="email"
           placeholder="Enter your email"
-          className="borderBlack h-14 rounded-lg bg-[#eace8f] px-4 transition-all placeholder:text-[#3B2316]/70 dark:bg-[#312516] dark:bg-opacity-80 placeholder:dark:text-[#bb9457]/80 dark:hover:bg-opacity-100"
+          className="borderBlack h-14 rounded-lg bg-[#eace8f] px-4 transition-all placeholder:text-[#3B2316]/70 focus:outline-none focus:ring-2 focus:ring-[#3b2316] dark:bg-[#312516] dark:bg-opacity-80 placeholder:dark:text-[#bb9457]/80 dark:hover:bg-opacity-100 dark:focus:ring-[#BB9457]"
           required
           maxLength={500}
         />
         <textarea
           name="message"
-          className="borderBlack my-3 h-52 rounded-lg bg-[#eace8f] p-4 transition-all placeholder:text-[#3B2316]/70 dark:bg-[#312516] dark:bg-opacity-80 placeholder:dark:text-[#bb9457]/80 dark:hover:bg-opacity-100"
+          className="borderBlack my-3 h-52 rounded-lg bg-[#eace8f] p-4 transition-all placeholder:text-[#3B2316]/70 focus:outline-none focus:ring-2 focus:ring-[#3b2316] dark:bg-[#312516] dark:bg-opacity-80 placeholder:dark:text-[#bb9457]/80 dark:hover:bg-opacity-100 dark:focus:ring-[#BB9457]"
           placeholder="Enter your message"
           required
           maxLength={5000}
