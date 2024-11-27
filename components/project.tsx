@@ -4,6 +4,8 @@ import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
 import { projectsData } from "@/lib/data";
+import { FaGithub, FaLink } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -25,18 +27,34 @@ export default function Project({
     <motion.section
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="group relative mb-3 max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-gray-100 last:mb-0 hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:mb-8 sm:h-[20rem] sm:pr-8"
+      className="group relative mb-3 max-w-[42rem] overflow-hidden rounded-lg border border-black/5 bg-[#BB9457]/30 last:mb-0 hover:bg-[#BB9457]/50 dark:bg-[#BB9457]/20  dark:hover:bg-[#BB9457]/30 sm:mb-8 sm:h-[20rem] sm:pr-8"
     >
       <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[21rem]">
         <h3 className="text-2xl font-semibold">{title}</h3>
-        <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+        <p className="mt-2 leading-relaxed text-[#3B2316]/70 dark:text-[#bb9457]">
           {description}
         </p>
+        <div className="flex gap-2 py-4">
+          <a
+            className="borderBlack flex h-10 w-10 items-center justify-center rounded-full bg-[#3c3836]/10 p-2 text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70"
+            href="https://github.com/mksonkar"
+            target="_blank"
+          >
+            <FaGithub />
+          </a>
+          <a
+            className="borderBlack flex h-10 w-10 items-center justify-center rounded-full bg-[#3c3836]/10 p-2 text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70"
+            href="https://github.com/mksonkar"
+            target="_blank"
+          >
+            <FiExternalLink />
+          </a>
+        </div>
         <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
           {tags.map((tag, index) => (
             <li
               key={index}
-              className="rounded-full bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white dark:text-white/70"
+              className="rounded-full bg-[#3B2316]/60 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-[#ffe6a7] dark:bg-[#1E110B]/60 dark:text-white/70"
             >
               {tag}
             </li>
