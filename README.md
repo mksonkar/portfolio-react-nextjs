@@ -1,5 +1,7 @@
 # Portfolio
 
+Welcome to my portfolio project built with **React**, **Next.js**, **TailwindCSS**, and other modern web technologies. This project showcases my skills in frontend development, animation, and email integration. It is designed to be visually appealing, responsive, and interactive.
+
 ## Technologies Used
 
 This project is built using the following technologies and libraries:
