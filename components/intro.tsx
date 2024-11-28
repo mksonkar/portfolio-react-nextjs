@@ -8,8 +8,10 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import Typewriter from "typewriter-effect";
 
 function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -55,14 +57,32 @@ function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Mukesh Kumar.</span> I'm a{" "}
         <span className="font-bold">front-end developer.</span> I enjoy building
-        cool apps and websites using{" "}
-        <span className="underline">React and Next.js</span>.
+        cool apps and websites with{" "}
+        <span className="font-mono font-bold">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString("❤️").pauseFor(2500).start();
+            }}
+            options={{
+              strings: [
+                "React.js",
+                "Next.js",
+                "TypeScript",
+                "JavaScript",
+                "Tailwind CSS",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </span>
+        {/* <span className="underline">React and Next.js</span>. */}
       </motion.h1>
 
       <motion.div
