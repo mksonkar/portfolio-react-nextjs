@@ -67,8 +67,10 @@ function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Mukesh Kumar.</span> I'm a{" "}
-        <span className="font-bold">front-end developer.</span> I enjoy building
-        cool apps and websites with{" "}
+        <span className="font-bold">front-end developer. </span>
+        <span className="inline-block">
+          I enjoy building cool apps and websites with{" "}
+        </span>
         <span className={`font-jetbrainsMono`}>
           <Typewriter
             onInit={(typewriter) => {
