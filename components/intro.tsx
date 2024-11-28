@@ -2,16 +2,21 @@
 
 import Image from "next/image";
 import React from "react";
+import { JetBrains_Mono } from "next/font/google";
 import mukeshPortrait from "@/public/mukeshPortrait.jpg";
 import { motion } from "motion/react";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
-import { TypeAnimation } from "react-type-animation";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import Typewriter from "typewriter-effect";
+
+export const jetBrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains-mono",
+});
 
 function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -21,7 +26,7 @@ function Intro() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] scroll-mt-96 text-center sm:mb-0"
+      className={`${jetBrainsMono.variable} mb-28 max-w-[50rem] scroll-mt-96 text-center sm:mb-0`}
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -64,7 +69,7 @@ function Intro() {
         <span className="font-bold">Hello, I'm Mukesh Kumar.</span> I'm a{" "}
         <span className="font-bold">front-end developer.</span> I enjoy building
         cool apps and websites with{" "}
-        <span className="font-mono font-bold">
+        <span className={`font-jetbrainsMono`}>
           <Typewriter
             onInit={(typewriter) => {
               typewriter.typeString("❤️").pauseFor(2500).start();
