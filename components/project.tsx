@@ -38,25 +38,25 @@ export default function Project({
         </p>
         <div className="flex gap-2 py-4">
           <a
-            className="borderBlack flex h-10 w-10 items-center justify-center rounded-full bg-[#3c3836]/10 p-2 text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70"
+            className="borderBlack flex items-center justify-center rounded-full bg-[#3c3836]/10 p-2 text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70 sm:p-1"
             href={githubUrl}
             target="_blank"
           >
             <FaGithub />
           </a>
           <a
-            className="borderBlack flex h-10 w-10 items-center justify-center rounded-full bg-[#3c3836]/10 p-2 text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70"
+            className="borderBlack flex items-center justify-center rounded-full bg-[#3c3836]/10 p-2 text-xl transition hover:scale-[1.15] hover:text-stone-950 focus:scale-[1.15] active:scale-105 dark:bg-[#FFE6A7]/20 dark:text-[#ffe6a7]/70 sm:p-1"
             href={deployUrl}
             target="_blank"
           >
             <FiExternalLink />
           </a>
         </div>
-        <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
+        <ul className="mt-4 flex flex-wrap gap-1 sm:mt-auto">
           {tags.map((tag, index) => (
             <li
               key={index}
-              className="rounded-full bg-[#3B2316]/60 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-[#ffe6a7] dark:bg-[#1E110B]/60 dark:text-opacity-70"
+              className="rounded-full bg-[#3B2316]/60 px-2 py-1 text-[0.65rem] uppercase tracking-wider text-[#ffe6a7] dark:bg-[#1E110B]/60 dark:text-opacity-70"
             >
               {tag}
             </li>
