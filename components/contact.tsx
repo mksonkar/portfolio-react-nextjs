@@ -15,7 +15,7 @@ export default function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="w-[min(100%, 38rem)] mb-20 text-center sm:mb-28"
+      className="w-[min(100%, 38rem)] mb-20 scroll-mt-28 text-center sm:mb-28"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
