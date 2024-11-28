@@ -6,6 +6,7 @@ import planeroImg from "@/public/planero.png";
 import ticTacToeImg from "@/public/ticTacToe.png";
 import todoListImg from "@/public/todoList.png";
 import passwordGeneratorImg from "@/public/passwordGenerator.png";
+import portfolioImg from "@/public/portfolio.png";
 
 export const links = [
   {
@@ -85,6 +86,23 @@ export const projectsData = [
     imageUrl: planeroImg,
     githubUrl: "https://github.com/mksonkar/planero-trello-clone-react",
     deployUrl: "https://planero.netlify.app/",
+  },
+  {
+    title: "Next.js Portfolio",
+    description:
+      "An elegant and clean portfolio website built with React and Next.js.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Framer Motion",
+      "React Email",
+      "Intersection Observer",
+    ],
+    imageUrl: portfolioImg,
+    githubUrl: "https://github.com/mksonkar/portfolio-react-nextjs",
+    deployUrl: "https://mukeshsonkar.vercel.app/",
   },
   {
     title: "React Password generator",
