@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} dark:text-opactiy-90 relative bg-[#ffe6a7] pt-28 text-[#432818] antialiased dark:bg-[#0F0906] dark:text-[#ffe6a7] sm:pt-36`}
+        className={`${geistSans.variable} ${geistMono.variable} dark:text-opactiy-90 relative bg-[#ffe6a7] pt-28 text-[#432818] antialiased dark:bg-[#0F0906] dark:text-[#ffe6a7]/80 sm:pt-36`}
       >
         {/* <div className="absolute right-[11rem] top-[-6rem] -z-10 h-[31.25rem] w-[31.25rem] rounded-full bg-red-300 blur-[10rem] dark:bg-red-500/40 sm:w-[68.75rem]"></div> */}
         {/* <div className="ld-100 absolute left-[-55rem] top-[-1rem] -z-10 h-[31.25rem] w-[50rem] rounded-full bg-amber-200 blur-[10rem] dark:bg-amber-500/40 sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]"></div> */}
