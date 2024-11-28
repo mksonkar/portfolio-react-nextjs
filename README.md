@@ -2,6 +2,10 @@
 
 Welcome to my portfolio project built with **React**, **Next.js**, **TailwindCSS**, and other modern web technologies. This project showcases my skills in frontend development, animation, and email integration. It is designed to be visually appealing, responsive, and interactive.
 
+Watch the demo on YouTube:
+
+[![Watch the demo video](https://img.youtube.com/vi/klkHUVqaYbg/hqdefault.jpg)](https://www.youtube.com/watch?v=klkHUVqaYbg)
+
 ## Technologies Used
 
 This project is built using the following technologies and libraries:
@@ -25,17 +29,17 @@ This project is built using the following technologies and libraries:
 - **Toast Notifications**: Using **React-Hot-Toast** to show interactive notifications (e.g., form submission success).
 - **Iconography**: **React-Icons** used throughout the project for visual appeal.
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Installation
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 To run this project locally on your machine, follow these steps:
 
 1. Clone the repository:
 
-   ````bash
-   git clone git@github.com:mksonkar/portfolio-react-nextjs.git   ```
-   ````
+   ```bash
+   git clone git@github.com:mksonkar/portfolio-react-nextjs.git
+   ```
 
 2. Navigate to the project directory:
 
